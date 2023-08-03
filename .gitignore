@@ -1,0 +1,20 @@
+### macOS ###
+# General
+.AppleDouble
+.LSOverride
+*.xcuserstate
+*.DS_Store
+.DS_Store
+
+
+*.xcuserdatad
+
+
+# 忽略IDE文件
+.idea/*
+.idea
+.env.secret
+.vscode/*
+.vscode
+.idea
+.idea/*
