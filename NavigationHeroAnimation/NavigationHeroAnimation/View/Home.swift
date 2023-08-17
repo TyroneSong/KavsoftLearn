@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct HeroHome: View {
+struct Home: View {
     // View Properties
     @Binding var selectedProFile: Profile?
     @Binding var pushView: Bool
@@ -167,5 +167,5 @@ struct ImageView: View {
 }
 
 #Preview {
-    NavigationHeroContentView()
+    ContentView()
 }

@@ -1,21 +1,20 @@
 //
-//  NavigationHeroContentView.swift
-//  RadialView
+//  ContentView.swift
+//  NavigationHeroAnimation
 //
-//  Created by 宋璞 on 2023/7/26.
+//  Created by 宋璞 on 2023/8/17.
 //
 
 import SwiftUI
 
-struct NavigationHeroContentView: View {
-    
+struct ContentView: View {
     @State private var selectedProfile: Profile?
     @State private var pushView: Bool = false
     @State private var hideView: (Bool, Bool) = (false , false)
     
     var body: some View {
         NavigationStack {
-            HeroHome(selectedProFile: $selectedProfile, pushView: $pushView)
+            Home(selectedProFile: $selectedProfile, pushView: $pushView)
                 .navigationTitle("ProFile")
                 .navigationDestination(isPresented: $pushView) {
                     DetailView(
@@ -40,5 +39,5 @@ struct NavigationHeroContentView: View {
 }
 
 #Preview {
-    NavigationHeroContentView()
+    ContentView()
 }
