@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3CA1C5C12B47DDD5008C62AF /* ScrollPrarllaxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1C5C02B47DDD5008C62AF /* ScrollPrarllaxApp.swift */; };
+		3CA1C5C12B47DDD5008C62AF /* ScrollParallaxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1C5C02B47DDD5008C62AF /* ScrollParallaxApp.swift */; };
 		3CA1C5C32B47DDD5008C62AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1C5C22B47DDD5008C62AF /* ContentView.swift */; };
 		3CA1C5C52B47DDD8008C62AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA1C5C42B47DDD8008C62AF /* Assets.xcassets */; };
 		3CA1C5C82B47DDD8008C62AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA1C5C72B47DDD8008C62AF /* Preview Assets.xcassets */; };
@@ -15,8 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3CA1C5BD2B47DDD5008C62AF /* ScrollPrarllax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollPrarllax.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CA1C5C02B47DDD5008C62AF /* ScrollPrarllaxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPrarllaxApp.swift; sourceTree = "<group>"; };
+		3CA1C5BD2B47DDD5008C62AF /* ScrollParallax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollParallax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA1C5C02B47DDD5008C62AF /* ScrollParallaxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollParallaxApp.swift; sourceTree = "<group>"; };
 		3CA1C5C22B47DDD5008C62AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3CA1C5C42B47DDD8008C62AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CA1C5C72B47DDD8008C62AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 		3CA1C5B42B47DDD5008C62AF = {
 			isa = PBXGroup;
 			children = (
-				3CA1C5BF2B47DDD5008C62AF /* ScrollPrarllax */,
+				3CA1C5BF2B47DDD5008C62AF /* ScrollParallax */,
 				3CA1C5BE2B47DDD5008C62AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,21 +45,21 @@
 		3CA1C5BE2B47DDD5008C62AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3CA1C5BD2B47DDD5008C62AF /* ScrollPrarllax.app */,
+				3CA1C5BD2B47DDD5008C62AF /* ScrollParallax.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3CA1C5BF2B47DDD5008C62AF /* ScrollPrarllax */ = {
+		3CA1C5BF2B47DDD5008C62AF /* ScrollParallax */ = {
 			isa = PBXGroup;
 			children = (
 				3CA1C5CE2B47DDE1008C62AF /* View */,
-				3CA1C5C02B47DDD5008C62AF /* ScrollPrarllaxApp.swift */,
+				3CA1C5C02B47DDD5008C62AF /* ScrollParallaxApp.swift */,
 				3CA1C5C22B47DDD5008C62AF /* ContentView.swift */,
 				3CA1C5C42B47DDD8008C62AF /* Assets.xcassets */,
 				3CA1C5C62B47DDD8008C62AF /* Preview Content */,
 			);
-			path = ScrollPrarllax;
+			path = ScrollParallax;
 			sourceTree = "<group>";
 		};
 		3CA1C5C62B47DDD8008C62AF /* Preview Content */ = {
@@ -81,9 +81,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3CA1C5BC2B47DDD5008C62AF /* ScrollPrarllax */ = {
+		3CA1C5BC2B47DDD5008C62AF /* ScrollParallax */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CA1C5CB2B47DDD8008C62AF /* Build configuration list for PBXNativeTarget "ScrollPrarllax" */;
+			buildConfigurationList = 3CA1C5CB2B47DDD8008C62AF /* Build configuration list for PBXNativeTarget "ScrollParallax" */;
 			buildPhases = (
 				3CA1C5B92B47DDD5008C62AF /* Sources */,
 				3CA1C5BA2B47DDD5008C62AF /* Frameworks */,
@@ -93,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = ScrollPrarllax;
+			name = ScrollParallax;
 			productName = ScrollPrarllax;
-			productReference = 3CA1C5BD2B47DDD5008C62AF /* ScrollPrarllax.app */;
+			productReference = 3CA1C5BD2B47DDD5008C62AF /* ScrollParallax.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3CA1C5B82B47DDD5008C62AF /* Build configuration list for PBXProject "ScrollPrarllax" */;
+			buildConfigurationList = 3CA1C5B82B47DDD5008C62AF /* Build configuration list for PBXProject "ScrollParallax" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3CA1C5BC2B47DDD5008C62AF /* ScrollPrarllax */,
+				3CA1C5BC2B47DDD5008C62AF /* ScrollParallax */,
 			);
 		};
 /* End PBXProject section */
@@ -150,7 +150,7 @@
 			files = (
 				3CA1C5C32B47DDD5008C62AF /* ContentView.swift in Sources */,
 				3CA1C5D02B47DDE9008C62AF /* Home.swift in Sources */,
-				3CA1C5C12B47DDD5008C62AF /* ScrollPrarllaxApp.swift in Sources */,
+				3CA1C5C12B47DDD5008C62AF /* ScrollParallaxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +283,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ScrollPrarllax/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ScrollParallax/Preview Content\"";
 				DEVELOPMENT_TEAM = 38R29HQGHS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -297,7 +297,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.neolink.ScrollPrarllax;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neolink.ScrollParallax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ScrollPrarllax/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ScrollParallax/Preview Content\"";
 				DEVELOPMENT_TEAM = 38R29HQGHS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -326,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.neolink.ScrollPrarllax;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neolink.ScrollParallax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -337,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3CA1C5B82B47DDD5008C62AF /* Build configuration list for PBXProject "ScrollPrarllax" */ = {
+		3CA1C5B82B47DDD5008C62AF /* Build configuration list for PBXProject "ScrollParallax" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CA1C5C92B47DDD8008C62AF /* Debug */,
@@ -346,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CA1C5CB2B47DDD8008C62AF /* Build configuration list for PBXNativeTarget "ScrollPrarllax" */ = {
+		3CA1C5CB2B47DDD8008C62AF /* Build configuration list for PBXNativeTarget "ScrollParallax" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CA1C5CC2B47DDD8008C62AF /* Debug */,

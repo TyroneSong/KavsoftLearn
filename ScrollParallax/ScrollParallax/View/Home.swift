@@ -1,6 +1,6 @@
 //
 //  Home.swift
-//  ScrollPrarllax
+//  ScrollParallax
 //
 //  Created by 宋璞 on 2024/1/5.
 //

@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  ScrollPrarllax
+//  ScrollParallax
 //
 //  Created by 宋璞 on 2024/1/5.
 //
@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             Home()
-                .navigationTitle("Prarllax View")
+                .navigationTitle("Parallax View")
                 .navigationBarTitleDisplayMode(.inline)
         }
     }
