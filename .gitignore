@@ -9,6 +9,9 @@
 
 *.xcuserdatad
 
+# 或略未完成项目
+AppPaywalls
+AppPaywalls/*
 
 # 忽略IDE文件
 .idea/*

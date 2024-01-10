@@ -37,7 +37,7 @@ struct Home: View {
                     .background(.ultraThinMaterial, in: .capsule)
                 }
                 
-                Text("Where do you want to \n See")
+                Text("五台美景 略")
                     .font(.largeTitle.bold())
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.top, 10)
