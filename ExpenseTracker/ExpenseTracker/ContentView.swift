@@ -15,22 +15,26 @@ struct ContentView: View {
     /// Active Tab
     @State private var activeTab: Tab = .recents
     
+    
+    @AppStorage("isAppLockEnabled") private var isAppLockEnabled: Bool = false
+    @AppStorage("lockWhenAppGoesBackground") private var lockWhenAppGoesBackground: Bool = false
+    
     var body: some View {
         TabView(selection: $activeTab) {
             
-            Text("Recents")
+            Recents()
                 .tag(Tab.recents)
                 .tabItem { Tab.recents.tabContent }
             
-            Text("Search")
+            Search()
                 .tag(Tab.search)
                 .tabItem { Tab.search.tabContent }
             
-            Text("Chart")
+            Grapha()
                 .tag(Tab.charts)
                 .tabItem { Tab.charts.tabContent }
             
-            Text("Settings")
+            Settings()
                 .tag(Tab.settings)
                 .tabItem { Tab.settings.tabContent }
         }

@@ -9,9 +9,12 @@
 
 *.xcuserdatad
 
-# 或略未完成项目
-AppPaywalls
+# 或略未完成项目vim
+AppPaywalls/
 AppPaywalls/*
+
+./ExpenseTracker/
+./ExpenseTracker/*
 
 # 忽略IDE文件
 .idea/*
