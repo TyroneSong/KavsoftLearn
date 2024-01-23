@@ -18,9 +18,9 @@
 		3C5E54542B4F85070000E47D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E54532B4F85070000E47D /* Date+Extensions.swift */; };
 		3C5E54572B4F8BE80000E47D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E54562B4F8BE80000E47D /* CardView.swift */; };
 		3C5E54592B4F93400000E47D /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E54582B4F93400000E47D /* TransactionCardView.swift */; };
-		3C5E545B2B4F957C0000E47D /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E545A2B4F957C0000E47D /* SwipeAction.swift */; };
 		3C5E545D2B4F96FD0000E47D /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E545C2B4F96FD0000E47D /* DateFilterView.swift */; };
 		3C5E545F2B4FE1B80000E47D /* NewExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E545E2B4FE1B80000E47D /* NewExpenseView.swift */; };
+		3C5E54E82B58FEE10000E47D /* CustomSwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E54E72B58FEE10000E47D /* CustomSwipeAction.swift */; };
 		3CA1C5DE2B47F6BA008C62AF /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1C5DD2B47F6BA008C62AF /* ExpenseTrackerApp.swift */; };
 		3CA1C5E02B47F6BA008C62AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1C5DF2B47F6BA008C62AF /* ContentView.swift */; };
 		3CA1C5E22B47F6BC008C62AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA1C5E12B47F6BC008C62AF /* Assets.xcassets */; };
@@ -42,9 +42,9 @@
 		3C5E54532B4F85070000E47D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		3C5E54562B4F8BE80000E47D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3C5E54582B4F93400000E47D /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
-		3C5E545A2B4F957C0000E47D /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
 		3C5E545C2B4F96FD0000E47D /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
 		3C5E545E2B4FE1B80000E47D /* NewExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseView.swift; sourceTree = "<group>"; };
+		3C5E54E72B58FEE10000E47D /* CustomSwipeAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomSwipeAction.swift; path = ../../../../CustomSwipeActions/CustomSwipeActions/View/CustomSwipeAction.swift; sourceTree = "<group>"; };
 		3CA1C5DA2B47F6BA008C62AF /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA1C5DD2B47F6BA008C62AF /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		3CA1C5DF2B47F6BA008C62AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				3C5E54562B4F8BE80000E47D /* CardView.swift */,
-				3C5E545A2B4F957C0000E47D /* SwipeAction.swift */,
+				3C5E54E72B58FEE10000E47D /* CustomSwipeAction.swift */,
 				3C5E54582B4F93400000E47D /* TransactionCardView.swift */,
 				3C5E545C2B4F96FD0000E47D /* DateFilterView.swift */,
 			);
@@ -234,7 +234,6 @@
 				3CA1C5F12B47F7AA008C62AF /* IntroScreen.swift in Sources */,
 				3CA1C5E02B47F6BA008C62AF /* ContentView.swift in Sources */,
 				3C5E54572B4F8BE80000E47D /* CardView.swift in Sources */,
-				3C5E545B2B4F957C0000E47D /* SwipeAction.swift in Sources */,
 				3C5E54432B4F7B0D0000E47D /* Transaction.swift in Sources */,
 				3CA1C5F32B47FA9A008C62AF /* Tab.swift in Sources */,
 				3C5E54502B4F7D650000E47D /* Settings.swift in Sources */,
@@ -243,6 +242,7 @@
 				3C5E544C2B4F7D400000E47D /* Search.swift in Sources */,
 				3C5E544E2B4F7D550000E47D /* Grapha.swift in Sources */,
 				3C5E54522B4F7EDC0000E47D /* View+Extensions.swift in Sources */,
+				3C5E54E82B58FEE10000E47D /* CustomSwipeAction.swift in Sources */,
 				3C5E54542B4F85070000E47D /* Date+Extensions.swift in Sources */,
 				3CA1C5EF2B47F75B008C62AF /* Constants.swift in Sources */,
 				3C5E54452B4F7B8A0000E47D /* Category.swift in Sources */,

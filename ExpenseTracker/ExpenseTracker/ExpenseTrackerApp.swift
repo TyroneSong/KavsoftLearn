@@ -15,4 +15,8 @@ struct ExpenseTrackerApp: App {
         }
         .modelContainer(for: [Transaction.self])
     }
+    
+    init() {
+        print(URL.applicationSupportDirectory.path(percentEncoded: false))
+    }
 }

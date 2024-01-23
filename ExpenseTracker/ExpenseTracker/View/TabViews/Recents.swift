@@ -17,11 +17,12 @@ struct Recents: View {
     @State private var startDate: Date = .now.startOfMonth
     @State private var endDate: Date = .now.endOfMonth
     @State private var showFilterView: Bool = false
-    @State private var selectedCategory: Category = .expense
+    @State private var selectedCategory: Category = .income
     
     // For Animation
     @Namespace private var animation
     @Query(sort: [SortDescriptor(\Transaction.dateAdded, order: .reverse)], animation: .snappy) private var transactions: [Transaction]
+    @Environment(\.modelContext) private var context
     
     var body: some View {
         GeometryReader {
@@ -41,21 +42,32 @@ struct Recents: View {
                             .hSpacing(.leading)
                             
                             // Card View
-                            CardView(income: 2353, expense: 4532)
+                            CardView(
+                                income: totalAmount(.income),
+                                expense: totalAmount(.expense))
                             
                             // Custom Segmented Control
                             CustomSegmentedContol()
                                 .padding(.bottom, 10)
                             
                             
-                            ForEach(transactions) { transaction in
+                            ForEach(transactions.filter({ $0.rawCategory == selectedCategory })) { transaction in
                                 NavigationLink {
                                     NewExpenseView(editTransaction: transaction)
                                 } label: {
-                                    TransactionCardView(transaction: transaction)
+                                    
+                                    SwipeAction(cornerRadius: 12) {
+                                        TransactionCardView(transaction: transaction)
+                                    } actions: {
+                                        Action(tint: .red, icon: "trash.fill") {
+//                                            transactions.removeAll(where: { $0 == transaction })
+                                            context.delete(transaction)
+                                        }
+                                    }
+
+                                    
                                 }
                                 .buttonStyle(.plain)
-
                             }
 
                         } header: {
@@ -83,6 +95,13 @@ struct Recents: View {
             }
             .animation(.snappy, value: showFilterView)
         }
+    }
+    
+    private func totalAmount(_ category: Category) -> Double {
+        let res = transactions.filter { $0.rawCategory == category }.reduce(0.0) { result, transaction in
+            return result + transaction.amount
+        }
+        return res
     }
     
     @ViewBuilder
