@@ -48,4 +48,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .modelContainer(for: [Transaction.self], inMemory: true)
 }

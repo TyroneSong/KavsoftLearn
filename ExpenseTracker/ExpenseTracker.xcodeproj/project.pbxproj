@@ -19,7 +19,7 @@
 		3C5E54572B4F8BE80000E47D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E54562B4F8BE80000E47D /* CardView.swift */; };
 		3C5E54592B4F93400000E47D /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E54582B4F93400000E47D /* TransactionCardView.swift */; };
 		3C5E545D2B4F96FD0000E47D /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E545C2B4F96FD0000E47D /* DateFilterView.swift */; };
-		3C5E545F2B4FE1B80000E47D /* NewExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E545E2B4FE1B80000E47D /* NewExpenseView.swift */; };
+		3C5E545F2B4FE1B80000E47D /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E545E2B4FE1B80000E47D /* TransactionView.swift */; };
 		3C5E54E82B58FEE10000E47D /* CustomSwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E54E72B58FEE10000E47D /* CustomSwipeAction.swift */; };
 		3CA1C5DE2B47F6BA008C62AF /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1C5DD2B47F6BA008C62AF /* ExpenseTrackerApp.swift */; };
 		3CA1C5E02B47F6BA008C62AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1C5DF2B47F6BA008C62AF /* ContentView.swift */; };
@@ -28,6 +28,7 @@
 		3CA1C5EF2B47F75B008C62AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1C5EE2B47F75B008C62AF /* Constants.swift */; };
 		3CA1C5F12B47F7AA008C62AF /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1C5F02B47F7AA008C62AF /* IntroScreen.swift */; };
 		3CA1C5F32B47FA9A008C62AF /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1C5F22B47FA9A008C62AF /* Tab.swift */; };
+		3CEE93FF2B5FB86B00937ACF /* FilterTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE93FE2B5FB86B00937ACF /* FilterTransactionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +44,7 @@
 		3C5E54562B4F8BE80000E47D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3C5E54582B4F93400000E47D /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		3C5E545C2B4F96FD0000E47D /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
-		3C5E545E2B4FE1B80000E47D /* NewExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseView.swift; sourceTree = "<group>"; };
+		3C5E545E2B4FE1B80000E47D /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		3C5E54E72B58FEE10000E47D /* CustomSwipeAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomSwipeAction.swift; path = ../../../../CustomSwipeActions/CustomSwipeActions/View/CustomSwipeAction.swift; sourceTree = "<group>"; };
 		3CA1C5DA2B47F6BA008C62AF /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA1C5DD2B47F6BA008C62AF /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		3CA1C5EE2B47F75B008C62AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3CA1C5F02B47F7AA008C62AF /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
 		3CA1C5F22B47FA9A008C62AF /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		3CEE93FE2B5FB86B00937ACF /* FilterTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransactionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				3C5E54E72B58FEE10000E47D /* CustomSwipeAction.swift */,
 				3C5E54582B4F93400000E47D /* TransactionCardView.swift */,
 				3C5E545C2B4F96FD0000E47D /* DateFilterView.swift */,
+				3CEE93FE2B5FB86B00937ACF /* FilterTransactionView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -132,7 +135,7 @@
 				3C5E54552B4F8BDF0000E47D /* Helpers */,
 				3C5E54482B4F7D0B0000E47D /* TabViews */,
 				3CA1C5F02B47F7AA008C62AF /* IntroScreen.swift */,
-				3C5E545E2B4FE1B80000E47D /* NewExpenseView.swift */,
+				3C5E545E2B4FE1B80000E47D /* TransactionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C5E54472B4F7BEF0000E47D /* TintColor.swift in Sources */,
+				3CEE93FF2B5FB86B00937ACF /* FilterTransactionView.swift in Sources */,
 				3C5E544A2B4F7D230000E47D /* Recents.swift in Sources */,
 				3C5E545D2B4F96FD0000E47D /* DateFilterView.swift in Sources */,
 				3CA1C5F12B47F7AA008C62AF /* IntroScreen.swift in Sources */,
@@ -238,7 +242,7 @@
 				3CA1C5F32B47FA9A008C62AF /* Tab.swift in Sources */,
 				3C5E54502B4F7D650000E47D /* Settings.swift in Sources */,
 				3CA1C5DE2B47F6BA008C62AF /* ExpenseTrackerApp.swift in Sources */,
-				3C5E545F2B4FE1B80000E47D /* NewExpenseView.swift in Sources */,
+				3C5E545F2B4FE1B80000E47D /* TransactionView.swift in Sources */,
 				3C5E544C2B4F7D400000E47D /* Search.swift in Sources */,
 				3C5E544E2B4F7D550000E47D /* Grapha.swift in Sources */,
 				3C5E54522B4F7EDC0000E47D /* View+Extensions.swift in Sources */,

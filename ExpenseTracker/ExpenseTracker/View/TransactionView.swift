@@ -1,5 +1,5 @@
 //
-//  NewExpenseView.swift
+//  TransactionView.swift
 //  ExpenseTracker
 //
 //  Created by 宋璞 on 2024/1/11.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewExpenseView: View {
+struct TransactionView: View {
     
     // Env Properties
     @Environment(\.modelContext) private var context
@@ -184,6 +184,9 @@ struct NewExpenseView: View {
 }
 
 #Preview {
-    ContentView()
-        .modelContainer(for: [Transaction.self])
+    NavigationStack {
+        TransactionView()
+    }
+//    ContentView()
+//        .modelContainer(for: [Transaction.self])
 }

@@ -21,7 +21,7 @@ struct Recents: View {
     
     // For Animation
     @Namespace private var animation
-    @Query(sort: [SortDescriptor(\Transaction.dateAdded, order: .reverse)], animation: .snappy) private var transactions: [Transaction]
+    
     @Environment(\.modelContext) private var context
     
     var body: some View {
@@ -41,33 +41,27 @@ struct Recents: View {
                             })
                             .hSpacing(.leading)
                             
-                            // Card View
-                            CardView(
-                                income: totalAmount(.income),
-                                expense: totalAmount(.expense))
-                            
-                            // Custom Segmented Control
-                            CustomSegmentedContol()
-                                .padding(.bottom, 10)
-                            
-                            
-                            ForEach(transactions.filter({ $0.rawCategory == selectedCategory })) { transaction in
-                                NavigationLink {
-                                    NewExpenseView(editTransaction: transaction)
-                                } label: {
-                                    
-                                    SwipeAction(cornerRadius: 12) {
+                            FilterTransactionView(startDate: startDate, endDate: endDate) { transactions in
+                                
+                                // Card View
+                                CardView(
+                                    income: total(transactions, category: .income),
+                                    expense: total(transactions, category: .expense)
+                                )
+                                
+                                // Custom Segmented Control
+                                CustomSegmentedContol()
+                                    .padding(.bottom, 10)
+                                
+                                
+                                ForEach(transactions.filter({ $0.rawCategory == selectedCategory })) { transaction in
+                                    NavigationLink {
+                                        TransactionView(editTransaction: transaction)
+                                    } label: {
                                         TransactionCardView(transaction: transaction)
-                                    } actions: {
-                                        Action(tint: .red, icon: "trash.fill") {
-//                                            transactions.removeAll(where: { $0 == transaction })
-                                            context.delete(transaction)
-                                        }
                                     }
-
-                                    
+                                    .buttonStyle(.plain)
                                 }
-                                .buttonStyle(.plain)
                             }
 
                         } header: {
@@ -125,7 +119,7 @@ struct Recents: View {
             Spacer(minLength: 0)
             
             NavigationLink {
-                NewExpenseView()
+                TransactionView()
             } label: {
                 Image(systemName: "plus")
                     .font(.title3)
