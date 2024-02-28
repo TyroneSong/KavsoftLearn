@@ -1,6 +1,6 @@
 //
 //  SegmentedControl.swift
-//  AnimatedSegnmentedControl
+//  AnimatedSegmentedControl
 //
 //  Created by 宋璞 on 2024/2/28.
 //
